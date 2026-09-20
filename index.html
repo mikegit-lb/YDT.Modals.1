@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YKS-YDT Modals & Modal Perfects Masterclass | 75+ Net Hedefi</title>
+  <meta name="description" content="ÖSYM YDT İngilizce Sınavı için Kapsamlı Modals ve Modal Perfects İnteraktif Öğrenme Portalı ve Araçları">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Mobile Topbar -->
+  <div class="mobile-topbar">
+    <div style="display:flex; align-items:center; gap:0.5rem;">
+      <button class="btn-hamburger" id="sidebarToggleBtn" aria-label="Menüyü Aç">☰</button>
+      <strong style="color:var(--teal-800); font-size:1.1rem;">YDT Modals</strong>
+    </div>
+    <span class="brand-target-pill">75+ Net Standardı</span>
+  </div>
+
+  <div class="app-wrapper">
+    <!-- Left Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="brand-wrapper">
+          <div class="brand-badge-icon">YDT</div>
+          <div>
+            <div class="brand-title">Modals Masterclass</div>
+            <span class="brand-target-pill">ÖSYM 75+ Net Hedefi</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Real-time Progress Card in Sidebar -->
+      <div class="sidebar-stats">
+        <div class="score-progress-header">
+          <span class="score-label">Toplam Başarı</span>
+          <span class="score-count" id="scoreBadge">0 / 42</span>
+        </div>
+        <div class="custom-progress-track">
+          <div class="custom-progress-bar" id="scoreProgressBar"></div>
+        </div>
+        <div class="streak-pill">
+          <span>⚡ İlerleme:</span>
+          <span id="percentBadge" style="font-weight:700; color:var(--teal-700);">%0 Tamamlandı</span>
+        </div>
+      </div>
+
+      <!-- Sidebar Navigation Links -->
+      <nav class="sidebar-nav">
+        <div class="nav-category-title">Modüler Dersler</div>
+        
+        <button class="sidebar-btn active" data-nav="overview">
+          <div class="sidebar-btn-left">
+            <span class="sidebar-btn-icon">🏠</span>
+            <span>Genel Bakış & Strateji</span>
+          </div>
+        </button>
+
+        <button class="sidebar-btn" data-nav="module1">
+          <div class="sidebar-btn-left">
+            <span class="sidebar-btn-icon">📌</span>
+            <span>1. Deduction & Certainty</span>
+          </div>
+          <span class="sidebar-btn-badge">8 Görev</span>
+        </button>
+
+        <button class="sidebar-btn" data-nav="module2">
+          <div class="sidebar-btn-left">
+            <span class="sidebar-btn-icon">📌</span>
+            <span>2. Obligation & Necessity</span>
+          </div>
+          <span class="sidebar-btn-badge">8 Görev</span>
+        </button>
+
+        <button class="sidebar-btn" data-nav="module3">
+          <div class="sidebar-btn-left">
+            <span class="sidebar-btn-icon">📌</span>
+            <span>3. Advisability & Regret</span>
+          </div>
+          <span class="sidebar-btn-badge">8 Görev</span>
+        </button>
+
+        <button class="sidebar-btn" data-nav="module4">
+          <div class="sidebar-btn-left">
+            <span class="sidebar-btn-icon">📌</span>
+            <span>4. Possibility & Capacity</span>
+          </div>
+          <span class="sidebar-btn-badge">8 Görev</span>
+        </button>
+
+        <div class="nav-category-title" style="margin-top:0.6rem;">İnteraktif Öğrenme Araçları</div>
+
+        <button class="sidebar-btn" data-nav="decisionTree">
+          <div class="sidebar-btn-left">
+            <span class="sidebar-btn-icon">🔬</span>
+            <span>Modal Karar Ağacı Labı</span>
+          </div>
+          <span class="sidebar-btn-badge" style="background-color:var(--teal-100); color:var(--teal-800);">Araç</span>
+        </button>
+
+        <button class="sidebar-btn" data-nav="flashcards">
+          <div class="sidebar-btn-left">
+            <span class="sidebar-btn-icon">🗂️</span>
+            <span>3D Flaş Kart Antrenörü</span>
+          </div>
+          <span class="sidebar-btn-badge" style="background-color:var(--teal-100); color:var(--teal-800);">11 Kart</span>
+        </button>
+
+        <button class="sidebar-btn" data-nav="rapidDrill">
+          <div class="sidebar-btn-left">
+            <span class="sidebar-btn-icon">⚡</span>
+            <span>60s Tuzak Avcısı (Speed)</span>
+          </div>
+          <span class="sidebar-btn-badge" style="background-color:var(--orange-100); color:var(--orange-700);">Hızlı Quiz</span>
+        </button>
+
+        <div class="nav-category-title" style="margin-top:0.6rem;">Sınav & Hızlı Tekrar</div>
+
+        <button class="sidebar-btn btn-exam-highlight" data-nav="mixedExam">
+          <div class="sidebar-btn-left">
+            <span class="sidebar-btn-icon">🎯</span>
+            <span>Mega YDT Deneme (10 Soru)</span>
+          </div>
+          <span class="sidebar-btn-badge" style="background-color:var(--orange-500); color:white;">10 Soru</span>
+        </button>
+
+        <button class="sidebar-btn" data-nav="cheatSheet">
+          <div class="sidebar-btn-left">
+            <span class="sidebar-btn-icon">⚡</span>
+            <span>Hızlı Formül Kartları</span>
+          </div>
+        </button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div>Veteran YDT İngilizce Zümresi</div>
+        <div style="font-size:0.7rem; color:var(--text-muted); margin-top:2px;">ÖSYM Müfredat Uyumu v2026</div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      
+      <!-- Interactive Top Learning Toolbar -->
+      <div class="toolbox-bar">
+        <div class="toolbox-title">
+          <span>🛠️ Ders İçi Akıllı Öğrenme Araçları:</span>
+        </div>
+        <div class="toolbox-actions">
+          <button class="tool-pill-toggle" id="toggleClueModeBtn">
+            <span>🔍 İpucu Vurgulayıcı Modu:</span>
+            <strong id="clueModeStateText">KAPALI</strong>
+          </button>
+          <button class="tool-pill-toggle" onclick="app.navigateTo('decisionTree')">
+            <span>🔬 Karar Ağacı</span>
+          </button>
+          <button class="tool-pill-toggle" onclick="app.navigateTo('flashcards')">
+            <span>🗂️ Flaş Kartlar</span>
+          </button>
+          <button class="tool-pill-toggle" onclick="app.navigateTo('rapidDrill')">
+            <span>⚡ 60s Hız Testi</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- View: Overview -->
+      <section id="view-overview" class="view-panel">
+        <div class="hero-box">
+          <div class="hero-badge-tag">🏆 YKS-YDT İngilizce Özel Çalışma Rehberi</div>
+          <h1 class="hero-heading">Modals & Modal Perfects Masterclass</h1>
+          <p class="hero-lead">
+            YDT'de adayların en çok hata yaptığı mantıksal çıkarım, zorunluluk tuzakları (<em>needn't have V3 vs. didn't need to</em>) ve kaçırılmış fırsatları (<em>could have V3</em>) modüler <strong>Öğren ➔ Anında Test Et ➔ Pekiştir</strong> döngüsü ve akıllı ders araçlarıyla sıfır hataya indirin.
+          </p>
+          <div class="hero-features-grid">
+            <div class="hero-feat-card">✓ 4 Kapsamlı Modül</div>
+            <div class="hero-feat-card">✓ 12 Anında Mikro-Kontrol (In-Flight)</div>
+            <div class="hero-feat-card">✓ 20 Modül Checkpoint Sorusu</div>
+            <div class="hero-feat-card">✓ 10 Soruluk Mega YDT Denemesi</div>
+          </div>
+        </div>
+
+        <div class="theory-card">
+          <h2 class="card-title-lg">🎯 YDT 75+ Net Çalışma Metodolojisi</h2>
+          <ol>
+            <li><strong>Yüksek Getirili Kuralları İnceleyin:</strong> Her konudaki formül, Türkçe çeviri ve zaman uyumu kurallarını kavrayın.</li>
+            <li><strong>🔍 İpucu Modunu Kullanın:</strong> Üstteki "İpucu Vurgulayıcı" butonuna basarak soruların içindeki tetikleyici kelimeleri öğretmen gözüyle görün.</li>
+            <li><strong>Anında Mikro-Kontrolleri (In-Flight Checks) Çözün:</strong> Kuralların hemen altındaki mikro görevlerle anında pekiştirin.</li>
+            <li><strong>🔬 Modal Karar Ağacı Labını Ziyaret Edin:</strong> Karıştırdığınız modalları 3 adımda otomatik formül motoruyla ayrıştırın.</li>
+            <li><strong>10 Soruluk Mega YDT Denemesini Bitirin:</strong> Sınav standartlarındaki karma test ile seviyenizi ölçün.</li>
+          </ol>
+          <div style="margin-top: 1.5rem; display:flex; gap:0.75rem; flex-wrap:wrap;">
+            <button class="btn-pill-choice" style="background-color:var(--teal-600); color:white; border-color:var(--teal-600); padding:0.7rem 1.5rem;" onclick="app.navigateTo('module1')">
+              🚀 1. Modüle Başla: Deduction ➔
+            </button>
+            <button class="btn-pill-choice" style="background-color:var(--orange-500); color:white; border-color:var(--orange-500); padding:0.7rem 1.5rem;" onclick="app.navigateTo('decisionTree')">
+              🔬 Karar Ağacını Aç ➔
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- View: Module 1 -->
+      <section id="view-module1" class="view-panel" style="display:none;"></section>
+
+      <!-- View: Module 2 -->
+      <section id="view-module2" class="view-panel" style="display:none;"></section>
+
+      <!-- View: Module 3 -->
+      <section id="view-module3" class="view-panel" style="display:none;"></section>
+
+      <!-- View: Module 4 -->
+      <section id="view-module4" class="view-panel" style="display:none;"></section>
+
+      <!-- View: Tool 1 - Decision Tree Lab -->
+      <section id="view-decisionTree" class="view-panel" style="display:none;">
+        <div class="module-banner">
+          <span class="module-tag" style="background-color:var(--teal-100); color:var(--teal-800);">AKILLI ÖĞRENME ARACI</span>
+          <h1 class="module-title-text">Modal Karar Ağacı & Ayrıştırma Laboratuvarı</h1>
+          <p class="module-subtext">Cümledeki zamanı ve anlam amacını seçin, karar motoru doğru modali ve YDT tuzağını otomatik belirlesin.</p>
+        </div>
+
+        <div class="step-wizard">
+          <h3 style="color:var(--teal-800); font-size:1.1rem; margin-bottom:0.5rem;">1. Adım: Cümlenin Zamanını (Time Frame) Seçiniz</h3>
+          <div class="step-options-grid">
+            <button class="step-card-option" id="btn-dt-present" onclick="app.setDecisionTime('present')">
+              ⏳ Şimdiki / Genel Zaman (Present / Future)
+            </button>
+            <button class="step-card-option" id="btn-dt-past" onclick="app.setDecisionTime('past')">
+              🕰️ Geçmiş Zaman (Past - have V3)
+            </button>
+          </div>
+
+          <div id="decisionStep2Container" style="display:none; margin-top:1.5rem;">
+            <h3 style="color:var(--teal-800); font-size:1.1rem; margin-bottom:0.5rem;">2. Adım: Vurgulanmak İstenen Anlam Amacını Seçiniz</h3>
+            <div class="step-options-grid" id="decisionCategoryGrid"></div>
+          </div>
+
+          <div class="decision-result-box" id="decisionResultBox">
+            <div style="font-size:0.8rem; font-weight:800; color:var(--orange-700); text-transform:uppercase;">🎯 ÖSYM Çözüm Formülü:</div>
+            <div id="dtResultFormula" style="font-size:1.6rem; font-weight:900; color:var(--teal-800); margin:0.3rem 0;"></div>
+            <div id="dtResultExample" style="font-size:0.95rem; font-style:italic; color:var(--text-main); margin-bottom:0.5rem;"></div>
+            <div id="dtResultNote" style="font-size:0.9rem; font-weight:700; color:var(--red-600); border-top:1px dashed var(--orange-300); padding-top:0.5rem;"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- View: Tool 2 - 3D Flashcards -->
+      <section id="view-flashcards" class="view-panel" style="display:none;">
+        <div class="module-banner">
+          <span class="module-tag">HIZLI EZBER & TEKRAR</span>
+          <h1 class="module-title-text">3D İnteraktif Modal Flaş Kartları</h1>
+          <p class="module-subtext">Kartın üzerine tıklayarak çevirin, formülleri ve Türkçe anlamları hızlıca test edin.</p>
+        </div>
+
+        <div class="flashcard-wrapper">
+          <div class="flashcard-3d" id="flashcardElement" onclick="app.flipFlashcard()">
+            <div class="flashcard-face flashcard-front">
+              <span style="font-size:0.8rem; font-weight:800; color:var(--orange-600); text-transform:uppercase;">Tıklayarak Çevir 🔄</span>
+              <div id="fcFrontModal" style="font-size:2rem; font-weight:900; color:var(--teal-800); margin:0.75rem 0;">must + V1</div>
+              <div id="fcFrontUsage" style="font-size:0.95rem; color:var(--text-secondary); font-weight:600;">Present Strong Deduction</div>
+            </div>
+            <div class="flashcard-face flashcard-back">
+              <span style="font-size:0.8rem; font-weight:700; color:var(--teal-200); text-transform:uppercase;">Türkçe Anlamı & Örnek</span>
+              <div id="fcBackTurkish" style="font-size:1.4rem; font-weight:800; color:#ffedd5; margin:0.5rem 0;">... olmalı / olduğu kesin</div>
+              <div id="fcBackExample" style="font-size:0.9rem; font-style:italic; color:#ccfbf1;">"He has 3 Rolex watches; he must be rich."</div>
+            </div>
+          </div>
+
+          <div class="flashcard-controls">
+            <button class="btn-pill-choice" onclick="app.prevFlashcard()">⬅️ Önceki</button>
+            <span id="fcCounterText" style="font-weight:800; align-self:center; color:var(--teal-800);">1 / 11</span>
+            <button class="btn-pill-choice" onclick="app.nextFlashcard()">Sonraki ➡️</button>
+            <button class="btn-pill-choice" style="background:var(--orange-500); color:white; border-color:var(--orange-500);" onclick="app.shuffleFlashcards()">🔀 Karıştır</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- View: Tool 3 - Rapid 60s Trap Hunter -->
+      <section id="view-rapidDrill" class="view-panel" style="display:none;">
+        <div class="module-banner">
+          <span class="module-tag" style="background-color:var(--orange-100); color:var(--orange-700);">HIZ & REFLEKS EĞİTİMİ</span>
+          <h1 class="module-title-text" style="color:var(--orange-700);">60 Saniyelik YDT Tuzak Avcısı (Trap Hunter)</h1>
+          <p class="module-subtext">YDT'nin en kafa karıştırıcı ikili ayrımlarında reflekslerinizi test edin.</p>
+        </div>
+
+        <div class="rapid-game-box">
+          <div id="rapidStartScreen">
+            <h2 style="color:var(--teal-800); margin-bottom:0.75rem;">⚡ Hazır mısınız?</h2>
+            <p style="color:var(--text-secondary); margin-bottom:1.5rem; font-size:0.95rem;">
+              60 saniye içinde karşınıza çıkacak hızlı ikili soruları cevaplayarak reflex puanınızı yükseltin.
+            </p>
+            <button class="btn-pill-choice" style="background:var(--teal-600); color:white; border-color:var(--teal-600); font-size:1.1rem; padding:0.75rem 2rem;" onclick="app.startRapidGame()">
+              ▶️ Testi Başlat (60s)
+            </button>
+          </div>
+
+          <div id="rapidPlayScreen" style="display:none;">
+            <div style="display:flex; justify-content:space-between; font-weight:800; font-size:1.1rem;">
+              <span style="color:var(--red-600);">⏳ Kalan Süre: <span id="rapidTimerDisplay">60</span>s</span>
+              <span style="color:var(--teal-700);">🏆 Puan: <span id="rapidScoreDisplay">0</span></span>
+            </div>
+
+            <div class="timer-bar-container">
+              <div class="timer-bar-inner" id="rapidTimerBar"></div>
+            </div>
+
+            <div id="rapidQuestionText" style="font-size:1.15rem; font-weight:700; color:var(--text-main); margin-bottom:1.5rem; min-height:60px;"></div>
+
+            <div class="choice-buttons-row" style="justify-content:center; gap:1rem;" id="rapidOptionsRow"></div>
+
+            <div id="rapidFeedbackMsg" style="margin-top:1rem; font-weight:700; font-size:0.95rem; min-height:24px;"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- View: Mixed Exam -->
+      <section id="view-mixedExam" class="view-panel" style="display:none;">
+        <div class="module-banner">
+          <span class="module-tag" style="background-color:var(--orange-100); color:var(--orange-700);">YKS-YDT GENEL DENEME</span>
+          <h1 class="module-title-text" style="color:var(--orange-700);">Mega YDT Authentic Mixed Practice Test</h1>
+          <p class="module-subtext">ÖSYM standartlarında hazırlanmış, bağlaçlar, zaman ipuçları ve çeldirici tuzaklar içeren 10 adet ileri düzey soru.</p>
+        </div>
+        <div id="mixedExamList"></div>
+      </section>
+
+      <!-- View: Cheat Sheet -->
+      <section id="view-cheatSheet" class="view-panel" style="display:none;">
+        <div class="module-banner">
+          <span class="module-tag">HIZLI TEKRAR KARTLARI</span>
+          <h1 class="module-title-text">Modals & Modal Perfects Formül Kartları</h1>
+          <p class="module-subtext">Sınav öncesi hızlı hatırlatma için formüller, Türkçe anlamları ve örnek kullanımlar.</p>
+        </div>
+        <div class="cards-grid-3" id="cheatSheetContainer"></div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- App Data & Interactive Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
